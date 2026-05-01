@@ -1,0 +1,63 @@
+.btn {
+  border-radius: 10px;
+  padding: 0 22px;
+  height: 48px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: var(--font-main);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.btn:active { transform: translateY(1px); }
+
+/* Primary */
+.btn-primary {
+  background: linear-gradient(135deg, var(--color-accent-1), var(--color-accent-2));
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(124, 58, 237, 0.3);
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.4);
+}
+
+/* Text / ghost */
+.btn-text {
+  background: transparent;
+  color: var(--color-text-muted);
+  box-shadow: none;
+  width: auto;
+  padding: 0 16px;
+}
+
+.btn-text:hover {
+  color: var(--color-text-main);
+  background: var(--color-surface-2);
+}
+
+/* Danger */
+.btn-danger {
+  background: rgba(248, 113, 113, 0.12);
+  color: var(--color-danger);
+  box-shadow: none;
+}
+
+.btn-danger:hover {
+  background: rgba(248, 113, 113, 0.2);
+}
+
+/* Disabled */
+.btn-disabled,
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+}
